@@ -293,7 +293,7 @@ void simulate() {
                 // cerr << "base path size" << base_paths.size()<< endl;
                 int base_id = base_paths.first;
                 const auto& path = base_paths.second;
-                if(precomputedPaths[!fighter.id][0].empty()){
+                if(!path.empty()){
                     moveFighter(fighter, getDirection(path[0].first, path[0].second, path[1].first, path[1].second));
                 }
 

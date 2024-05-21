@@ -277,6 +277,7 @@ void simulate() {
             refuel(fighter, tmp_blue_base);
             
             if (fighter.fuel <= 0) continue;
+            
             int sx = fighter.x, sy = fighter.y;
             // cerr << "fighter start at (" << sx << "," << sy << ")" << endl;
             int closest_base = -1, min_dist = numeric_limits<int>::max();
@@ -341,7 +342,7 @@ void simulate() {
 
 int main() {
     freopen("./data/testcase1.in","r",stdin);
-    freopen("./output/testcase1.out","w",stdout);
+    freopen("./output/testcase11.out","w",stdout);
     parseInput();
     simulate();
     return 0;
